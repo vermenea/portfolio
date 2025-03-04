@@ -19,10 +19,10 @@ export default function About() {
       <h1 className='text-4xl font-semibold mt-16 md:mt-24'>About Vermenea</h1>
       <div className='flex flex-col items-center sm:h-1/2 sm:text-xs md:text-md'>
         <p className='text-lg text-center px-4 sm:px-24 my-4 sm:my-4'>
-          Oh hello there! My name is Natalia or Vermenea - I'm a{' '}
+          Oh hello there! My name is Natalia or Vermenea - I'm a
           <span className={styles.rainbowText}>
             caffeine-fueled frontend sorcerer
-          </span>{' '}
+          </span>
           who turns pixels into experiences and coffee into code. I specialize
           in crafting sleek, responsive user interfaces with Javascript, Next.js
           and React. My journey in coding has been a wild ride, full of

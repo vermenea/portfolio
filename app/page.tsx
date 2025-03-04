@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './Home.module.css';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -22,13 +23,13 @@ export default function Home() {
       </p>
       <div className='flex space-x-4 absolute bottom-4'>
         <Link href='https://github.com/vermenea' passHref>
-          <img src='/githubwhite.png' alt='github' className='h-6' />
+          <Image src='/githubwhite.png' alt='github' className='h-6' />
         </Link>
         <Link href='https://www.linkedin.com/in/vermenea/' passHref>
-          <img src='/linkedinwhite.png' alt='linkedin' className='h-6' />
+          <Image src='/linkedinwhite.png' alt='linkedin' className='h-6' />
         </Link>
         <Link href='https://x.com/vermenea' passHref>
-          <img src='/twitter.png' alt='x' className='h-6' />
+          <Image src='/twitter.png' alt='x' className='h-6' />
         </Link>
       </div>
     </div>
