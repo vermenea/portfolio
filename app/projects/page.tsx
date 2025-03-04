@@ -15,11 +15,11 @@ export default function Projects() {
           <p className='text-lg font-semibold'>Projects</p>
         </Link>
       </nav>
-      <h1 className='text-4xl font-semibold mb-12'>Vermenea's Projects</h1>
+      <h1 className='text-4xl font-semibold mb-12'>Vermenea&apos;s Projects</h1>
       <Link href='https://github.com/vermenea' passHref>
         <div className='flex items-center space-x-4'>
           <p>Go check those projects (✿◡‿◡)</p>
-          <Image src='/githubwhite.png' alt='github' className='h-6' />
+          <Image src='/githubwhite.png' alt='github' width={24} height={24}/>
         </div>
       </Link>
     </div>

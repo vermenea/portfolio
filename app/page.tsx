@@ -23,13 +23,18 @@ export default function Home() {
       </p>
       <div className='flex space-x-4 absolute bottom-4'>
         <Link href='https://github.com/vermenea' passHref>
-          <Image src='/githubwhite.png' alt='github' className='h-6' />
+          <Image src='/githubwhite.png' alt='github' width={24} height={24} />
         </Link>
         <Link href='https://www.linkedin.com/in/vermenea/' passHref>
-          <Image src='/linkedinwhite.png' alt='linkedin' className='h-6' />
+          <Image
+            src='/linkedinwhite.png'
+            alt='linkedin'
+            width={24}
+            height={24}
+          />
         </Link>
         <Link href='https://x.com/vermenea' passHref>
-          <Image src='/twitter.png' alt='x' className='h-6' />
+          <Image src='/twitter.png' alt='x' width={24} height={24} />
         </Link>
       </div>
     </div>
