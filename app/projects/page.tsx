@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Projects() {
@@ -18,7 +19,7 @@ export default function Projects() {
       <Link href='https://github.com/vermenea' passHref>
         <div className='flex items-center space-x-4'>
           <p>Go check those projects (✿◡‿◡)</p>
-          <img src='/githubwhite.png' alt='github' className='h-6' />
+          <Image src='/githubwhite.png' alt='github' className='h-6' />
         </div>
       </Link>
     </div>

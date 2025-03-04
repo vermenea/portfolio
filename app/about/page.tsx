@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from '../Home.module.css';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -29,7 +30,7 @@ export default function About() {
           debugging marathon. If you need a website or an employee, I'm your
           gal!
         </p>
-        <img
+        <Image
           src='./justagirl.png'
           alt='Im just a girl hamster meme'
           className='h-36'
