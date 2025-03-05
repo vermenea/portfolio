@@ -21,24 +21,24 @@ export default function Projects() {
     <div className='flex flex-col items-center justify-center min-h-screen p-4'>
       <nav className='fixed top-0 left-0 w-screen h-16 flex items-center justify-between px-4'>
         <Link href='/' passHref>
-          <p className='text-lg font-semibold'>Home</p>
+          <p className='text-lg font-semibold text-white'>Home</p>
         </Link>
         <Link href='/about' passHref>
-          <p className='text-lg font-semibold'>About</p>
+          <p className='text-lg font-semibold text-white'>About</p>
         </Link>
         <Link href='/projects' passHref>
-          <p className='text-lg font-semibold'>Projects</p>
+          <p className='text-lg font-semibold text-white'>Projects</p>
         </Link>
       </nav>
-      <h1 className='text-4xl font-semibold mb-12 text-white'>
+      <h1 className='ml-4 text-4xl font-semibold mb-12 text-white mt-20'>
         Vermenea&apos;s Projects
       </h1>
 
-      <div className='space-y-6'>
+      <div className='space-y-6 w-full max-w-4xl px-4'>
         {projects.map((project, index) => (
           <div
             key={index}
-            className='bg-[#d9d9d9] w-[450px] rounded-lg shadow-lg border-2 border-black relative'
+            className='bg-[#d9d9d9] w-full rounded-lg shadow-lg border-2 border-black relative'
           >
             <div className='bg-[#cfcece] text-white px-3 py-1 font-semibold rounded-t-md flex justify-between items-center'>
               <span>{project.title}</span>
