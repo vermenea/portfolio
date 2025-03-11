@@ -9,6 +9,12 @@ const projects = [
     link: 'https://your-pomo-buddy.vercel.app/',
   },
   {
+    title: 'MemoMyChinchilla - Game',
+    description:
+      'MemoMyChinChilla is a memory card game built with vanilla JavaScript, where players match pairs of cards. The game features my four adorable chinchillas, adding a playful and personal touch to the challenge.',
+    link: 'https://vermenea.github.io/MemoMyChinchilla/',
+  },
+  {
     title: 'DreamOps - Project',
     description:
       'DreamOps is an e-learning platform designed for individuals aspiring to become DevOps engineers. It provides a structured learning path, hands-on exercises, and essential resources to help users master DevOps principles, tools, and best practices.',
