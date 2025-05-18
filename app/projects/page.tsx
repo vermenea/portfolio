@@ -20,6 +20,12 @@ const projects = [
       'DreamOps is an e-learning platform designed for individuals aspiring to become DevOps engineers. It provides a structured learning path, hands-on exercises, and essential resources to help users master DevOps principles, tools, and best practices.',
     link: 'https://frontend-staging.tuto.dev.pfaff.app/',
   },
+   {
+    title: 'Anita Maruszewska - Twoja uroda z Ajurwedą',
+    description:
+      'Freelance project.',
+    link: 'https://anitamaruszewska.pl/',
+  },
 ];
 
 export default function Projects() {

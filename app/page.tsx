@@ -5,10 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Home() {
-  const fullText = 'Are you looking for a frontend developer?';
-  const answer = 'Yes ? Click here!';
+  const fullText = 'Are you looking for a website?';
   const [displayedText, setDisplayedText] = useState('');
-  const [isTypingComplete, setIsTypingComplete] = useState(false);
   const typingSpeed = 100;
   useEffect(() => {
     let index = 0;
@@ -17,9 +15,6 @@ export default function Home() {
       index++;
       if (index === fullText.length) {
         clearInterval(interval);
-        setTimeout(() => {
-          setIsTypingComplete(true);
-        }, 1000);
       }
     }, typingSpeed);
 
@@ -50,15 +45,6 @@ export default function Home() {
         <p className='text-2xl md:text-4xl font-mono border-r-2 border-white pr-2 animate-pulse'>
           {displayedText}
         </p>
-        {isTypingComplete && (
-          <Link
-            className='text-2xl md:text-4xl font-mono border-r-2 border-white pr-2 animate-pulse'
-            href='/about'
-            passHref
-          >
-            {answer}
-          </Link>
-        )}
       </div>
 
       <div className='flex space-x-4 absolute bottom-4'>
