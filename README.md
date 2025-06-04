@@ -4,9 +4,13 @@
 ## Features
 
 - **Responsive Design** 
-- **Project Showcase** 
-- **Performance Optimized** 
+- **Project Showcase**
 - **Accessible**  
+- **Performance Optimized**
+
+![image](https://github.com/user-attachments/assets/07fa9725-d171-41b6-828b-d268efc33139)
+
+
 
 ## Tech Stack
 
