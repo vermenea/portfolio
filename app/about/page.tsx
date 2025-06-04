@@ -25,15 +25,30 @@ export default function About() {
       </nav>
       <h1 className='text-4xl font-semibold mt-16 md:mt-24'>{t.about.title}</h1>
       <div className='flex flex-col items-center sm:h-1/2 sm:text-xs md:text-md'>
-        <p className='text-lg text-center px-4 sm:px-24 my-4 sm:my-4'>
+        <p className='text-lg text-center p-4 sm:px-24 my-4 sm:my-4'>
           {t.about.description}
         </p>
         <Image
-          src='/justagirl.png'
-          alt='Im just a girl hamster meme'
-          width={124}
-          height={124}
+          src='/me.png'
+          alt='Me in AI generated art style'
+          width={300}
+          height={300}
         />
+      </div> <div className='flex space-x-4 absolute bottom-4'>
+        <Link href='https://github.com/vermenea' passHref>
+          <Image src='/githubwhite.png' alt='github' width={24} height={24} />
+        </Link>
+        <Link href='https://www.linkedin.com/in/vermenea/' passHref>
+          <Image
+            src='/linkedinwhite.png'
+            alt='linkedin'
+            width={24}
+            height={24}
+          />
+        </Link>
+        <Link href='https://x.com/vermenea' passHref>
+          <Image src='/twitter.png' alt='x' width={24} height={24} />
+        </Link>
       </div>
       <div className='fixed bottom-4 right-4 flex gap-2'>
         <LanguageToggle />
