@@ -11,8 +11,8 @@ export default function About() {
   const t = translations[language];
 
   return (
-    <div className='flex flex-col items-center justify-center w-screen h-screen overflow-hidden p-4'>
-      <nav className='fixed top-0 left-0 w-screen h-16 flex items-center justify-between px-4'>
+    <div className='flex flex-col items-center justify-start min-h-screen p-4 pb-20 bg-gray-900'>
+      <nav className='fixed top-0 left-0 w-screen h-16 flex items-center justify-between px-4 bg-gray-900/30 backdrop-blur-sm z-50'>
         <Link href='/' passHref>
           <p className='text-lg font-semibold'>{t.nav.home}</p>
         </Link>
@@ -23,20 +23,30 @@ export default function About() {
           <p className='text-lg font-semibold'>{t.nav.projects}</p>
         </Link>
       </nav>
-      <h1 className='text-4xl font-semibold mt-16 md:mt-24'>{t.about.title}</h1>
-      <div className='flex flex-col items-center sm:h-1/2 sm:text-xs md:text-md'>
-        <p className='text-lg text-center p-4 sm:px-24 my-4 sm:my-4'>
+      <h1 className='text-3xl md:text-4xl font-semibold mt-20 md:mt-24'>
+        {t.about.title}
+      </h1>
+      <div className='flex flex-col items-center max-w-4xl py-8 md:py-20'>
+        <p className='text-base md:text-lg text-center px-4 md:px-24 mb-8'>
           {t.about.description}
         </p>
         <Image
           src='/me.png'
           alt='Me in AI generated art style'
-          width={300}
-          height={300}
+          width={200}
+          height={200}
+          className='w-48 md:w-72 h-auto'
         />
-      </div> <div className='flex space-x-4 absolute bottom-4'>
+      </div>
+      <div className='flex space-x-4 justify-center w-full mt-8 mb-20'>
         <Link href='https://github.com/vermenea' passHref>
-          <Image src='/githubwhite.png' alt='github' width={24} height={24} />
+          <Image
+            src='/githubwhite.png'
+            alt='github'
+            width={24}
+            height={24}
+            className='hover:opacity-80 transition-opacity'
+          />
         </Link>
         <Link href='https://www.linkedin.com/in/vermenea/' passHref>
           <Image
@@ -44,13 +54,20 @@ export default function About() {
             alt='linkedin'
             width={24}
             height={24}
+            className='hover:opacity-80 transition-opacity'
           />
         </Link>
         <Link href='https://x.com/vermenea' passHref>
-          <Image src='/twitter.png' alt='x' width={24} height={24} />
+          <Image
+            src='/twitter.png'
+            alt='x'
+            width={24}
+            height={24}
+            className='hover:opacity-80 transition-opacity'
+          />
         </Link>
       </div>
-      <div className='fixed bottom-4 right-4 flex gap-2'>
+      <div className='fixed bottom-4 right-4 flex gap-2 z-50'>
         <LanguageToggle />
       </div>
     </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { LanguageProvider } from '@/context/LanguageContext';
-import './globals.css';
+import '@/style/globals.css';
 
 export const metadata: Metadata = {
   title: 'Vermenea',
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className='bg-gray-900'>
+      <body>
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>

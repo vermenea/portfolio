@@ -30,7 +30,7 @@ export default function Home() {
   }, [fullText]);
 
   return (
-    <div className='flex flex-col items-center justify-center w-screen h-screen overflow-hidden text-white p-4'>
+    <div className='flex flex-col items-center justify-center w-screen h-screen overflow-hidden text-white p-4 bg-gray-900'>
       <nav className='fixed top-0 left-0 w-screen h-16 flex items-center justify-between px-4'>
         <Link href='/' passHref>
           <p className='text-lg md:text-xl font-semibold cursor-pointer'>
@@ -49,7 +49,7 @@ export default function Home() {
         </Link>
       </nav>
       <div>
-        <p className='text-2xl md:text-4xl font-mono border-r-2 border-white pr-2 animate-pulse'>
+        <p className='text-2xl md:text-4xl font-mono border-r-2 border-white pr-2 animate-pulse text-center'>
           {displayedText}
         </p>
       </div>
