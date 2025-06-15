@@ -9,7 +9,7 @@ const projectLinks = [
   'https://vermenea.github.io/MemoMyChinchilla/',
   'https://frontend-staging.tuto.dev.pfaff.app/',
   'https://anitamaruszewska.pl/',
-];
+] as const;
 
 export default function Projects() {
   const { language } = useLanguage();
@@ -19,7 +19,7 @@ export default function Projects() {
     <div className='relative flex flex-col items-center justify-center min-h-screen p-4'>
       <div className='absolute inset-0 bg-[url("/bcg.jpg")] bg-cover bg-center opacity-20 z-0'></div>
       <div className='relative z-10 w-full flex flex-col items-center'>
-        <nav className='fixed top-0 left-0 w-screen h-16 flex items-center justify-between px-4 bg-gray-900/30 backdrop-blur-sm z-50'>
+        <nav className='fixed top-0 left-0 w-screen h-16 flex items-center justify-between px-4 bg-transparent-900/30 backdrop-blur-sm z-50'>
           <Link href='/' passHref>
             <p className='text-lg font-semibold text-white'>{t.nav.home}</p>
           </Link>
@@ -43,18 +43,20 @@ export default function Projects() {
               <h2 className='text-2xl mb-4'>{project.title}</h2>
               <p className='mb-6'>{project.description}</p>
               <div className='flex gap-4'>
-                <Link
-                  href={projectLinks[index]}
-                  className='px-6 py-2 rounded-lg bg-gradient-to-r from-red-500/70 to-pink-500/70 text-white hover:from-red-400 hover:to-pink-400 transition-all duration-300 transform hover:scale-105'
-                >
-                  {t.projects.goToProject}
-                </Link>
+                {!['Automatikserwis - car workshop website', 'KodON - science club website', 'KodON - strona internetowa koła naukowego', 'Automatikserwis - strona internetowa warsztatu samochodowego'].includes(project.title) && (
+                  <Link
+                    href={projectLinks[index] || '#'}
+                    className='px-6 py-2 rounded-lg bg-gradient-to-r from-red-500/70 to-pink-500/70 text-white hover:from-red-400 hover:to-pink-400 transition-all duration-300 transform hover:scale-105'
+                  >
+                    {t.projects.goToProject}
+                  </Link>
+                )}
               </div>
             </div>
           ))}
         </div>
 
-        <p className='text-lg text-center mt-4'>{t.projects.checkOthers}</p>
+        <Link href='https://github.com/vermenea?tab=repositories' className='text-lg text-center mt-4' passHref>{t.projects.checkOthers}</Link>
         <div className='fixed bottom-4 right-4 flex gap-2'>
           <LanguageToggle />
         </div>

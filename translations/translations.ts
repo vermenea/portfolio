@@ -33,6 +33,14 @@ export const translations = {
         {
           title: 'Anita Maruszewska - Twoja uroda z Ajurwedą',
           description: 'Freelance project.'
+        },
+        {
+          title: 'KodON - science club website',
+          description: 'soon'
+        },
+        {
+          title: 'Automatikserwis - car workshop website',
+          description: 'soon'
         }
       ]
     }
@@ -71,6 +79,14 @@ export const translations = {
         {
           title: 'Anita Maruszewska - Twoja uroda z Ajurwedą',
           description: 'Projekt freelancerski.'
+        },
+        {
+          title: 'KodON - strona internetowa koła naukowego',
+          description: 'wkrótce'
+        },
+        {
+          title: 'Automatikserwis - strona internetowa warsztatu samochodowego',
+          description: 'wkrótce'
         }
       ]
     }

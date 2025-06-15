@@ -38,7 +38,15 @@ export default function About() {
           className='w-48 md:w-72 h-auto'
         />
       </div>
-      <div className='flex space-x-4 justify-center w-full mt-8 mb-20'>
+      <div>
+          <Link
+            href='mailto:vermenea@gmail.com'
+            className='px-6 py-2 rounded-lg bg-gradient-to-r from-red-500/70 to-pink-500/70 text-white hover:from-red-400 hover:to-pink-400 transition-all duration-300 transform hover:scale-105'
+          >
+            {t.home.contactMe}
+          </Link>
+        </div>
+      <div className='flex space-x-4 justify-center w-full mt-20 mb-20'>
         <Link href='https://github.com/vermenea' passHref>
           <Image
             src='/githubwhite.png'
