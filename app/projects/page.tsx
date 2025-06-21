@@ -11,7 +11,7 @@ const projectLinks: string[] = [
   'https://vermenea.github.io/MemoMyChinchilla/',
   'https://frontend-staging.tuto.dev.pfaff.app/',
   'https://anitamaruszewska.pl/',
-];
+] as const;
 
 export default function Projects() {
   const { language } = useLanguage();
@@ -35,12 +35,14 @@ export default function Projects() {
               <h2 className='text-2xl mb-4'>{project.title}</h2>
               <p className='mb-6'>{project.description}</p>
               <div className='flex gap-4'>
-                <Link
-                  href={projectLinks[index]}
-                  className='px-6 py-2 rounded-lg bg-gradient-to-r from-red-500/70 to-pink-500/70 text-white hover:from-red-400 hover:to-pink-400 transition-all duration-300 transform hover:scale-105'
-                >
-                  {t.projects.goToProject}
-                </Link>
+                {!['Automatikserwis - car workshop website', 'KodON - science club website', 'KodON - strona internetowa koła naukowego', 'Automatikserwis - strona internetowa warsztatu samochodowego'].includes(project.title) && (
+                  <Link
+                    href={projectLinks[index] || '#'}
+                    className='px-6 py-2 rounded-lg bg-gradient-to-r from-red-500/70 to-pink-500/70 text-white hover:from-red-400 hover:to-pink-400 transition-all duration-300 transform hover:scale-105'
+                  >
+                    {t.projects.goToProject}
+                  </Link>
+                )}
               </div>
             </div>
           ))}
