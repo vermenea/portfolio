@@ -15,11 +15,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <LanguageProvider>
-          <div className="fixed inset-0 -z-10 bg-[url('/pink-bcg.webp')] bg-cover bg-center">
-            {children}
-          </div>
-        </LanguageProvider>
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );

@@ -13,12 +13,12 @@ export default function Home() {
   return (
     <div className='flex flex-col items-center justify-center w-screen h-screen overflow-hidden text-white p-4 relative'>
       <nav className='fixed top-0 left-0 w-screen h-16 flex items-center justify-between px-4'>
-        <Link href='/' >
+        <Link href='/'>
           <p className='text-lg md:text-xl font-semibold cursor-pointer'>
             {t.nav.home}
           </p>
         </Link>
-        <Link href='/about' >
+        <Link href='/about'>
           <p className='text-lg md:text-xl font-semibold cursor-pointer'>
             {t.nav.about}
           </p>
@@ -29,13 +29,22 @@ export default function Home() {
           </p>
         </Link>
       </nav>
-      <div className='w-full md:text-center'>
-        <h1 className='text-5xl sm:text-6xl font-bold font-code'>
+      <div className='w-full px-4 flex flex-col md:justify-center justify-start md:text-center text-left'>
+        <div className='flex md:justify-center justify-start my-6'>
+          <Image
+            src='/me.webp'
+            alt='avatar'
+            width={180}
+            height={180}
+            className='rounded-full'
+          />
+        </div>
+        <h1 className='text-5xl sm:text-6xl font-bold font-code '>
           {t.home.typingText}
         </h1>
       </div>
 
-      <div className='flex w-full mt-8 sm:justify-center justify-start items-start space-y-4'>
+      <div className='flex w-full mt-6 sm:justify-center justify-start items-start space-y-4 px-4'>
         <Link
           href='mailto:vermenea@gmail.com'
           className='px-6 py-2 rounded-lg bg-gradient-to-r from-red-500/70 to-pink-500/70 text-white hover:from-red-400 hover:to-pink-400 transition-all duration-300 transform hover:scale-105'
@@ -45,10 +54,10 @@ export default function Home() {
       </div>
 
       <div className='flex space-x-4 absolute bottom-4'>
-        <Link href='https://github.com/vermenea' >
+        <Link href='https://github.com/vermenea'>
           <Image src='/githubwhite.png' alt='github' width={24} height={24} />
         </Link>
-        <Link href='https://www.linkedin.com/in/vermenea/' >
+        <Link href='https://www.linkedin.com/in/vermenea/'>
           <Image
             src='/linkedinwhite.png'
             alt='linkedin'
@@ -56,7 +65,7 @@ export default function Home() {
             height={24}
           />
         </Link>
-        <Link href='https://x.com/vermenea' >
+        <Link href='https://x.com/vermenea'>
           <Image src='/twitter.png' alt='x' width={24} height={24} />
         </Link>
       </div>

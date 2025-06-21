@@ -28,7 +28,7 @@ export default function About() {
         {t.about.specializations.map((spec: Spec, idx: number) => (
           <div
             key={idx}
-            className='glassy-hover-box bg-white/10 border border-pink-300/40 rounded-xl shadow-lg shadow-pink-200/30 p-6 flex flex-col items-center backdrop-blur-sm transition-all duration-300'
+            className='border bg-black/30 backdrop-blur-sm p-6 rounded-lg border-red-500/70 text-center'
           >
             <h2 className='text-xl font-bold mb-2 text-white drop-shadow'>
               {spec.title}
