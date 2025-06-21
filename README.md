@@ -8,7 +8,7 @@
 - **Accessible**  
 - **Performance Optimized**
 
-![image](https://github.com/user-attachments/assets/07fa9725-d171-41b6-828b-d268efc33139)
+![image](https://github.com/user-attachments/assets/f80b8f06-0a2b-4739-b3c5-fba41e878c85)
 
 
 
