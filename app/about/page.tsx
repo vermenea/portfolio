@@ -1,28 +1,21 @@
 'use client';
 import Link from 'next/link';
-
 import Image from 'next/image';
+
 import LanguageToggle from '@/components/LanguageToggle';
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/translations/translations';
+import '@/style/glassy-hover.css';
+import { Spec } from '@/types/types';
+import Nav from '@/components/Nav';
 
 export default function About() {
   const { language } = useLanguage();
   const t = translations[language];
 
   return (
-    <div className='flex flex-col items-center justify-start min-h-screen p-4 pb-20 bg-gray-900'>
-      <nav className='fixed top-0 left-0 w-screen h-16 flex items-center justify-between px-4 bg-gray-900/30 backdrop-blur-sm z-50'>
-        <Link href='/' passHref>
-          <p className='text-lg font-semibold'>{t.nav.home}</p>
-        </Link>
-        <Link href='/about' passHref>
-          <p className='text-lg font-semibold'>{t.nav.about}</p>
-        </Link>
-        <Link href='/projects' passHref>
-          <p className='text-lg font-semibold'>{t.nav.projects}</p>
-        </Link>
-      </nav>
+    <div className='flex flex-col items-center justify-start fit-h-screen p-4 pb-20  bg-[url("/pink-bcg.jpg")] bg-cover bg-center relative'>
+      <Nav />
       <h1 className='text-3xl md:text-4xl font-semibold mt-20 md:mt-24'>
         {t.about.title}
       </h1>
@@ -30,16 +23,22 @@ export default function About() {
         <p className='text-base md:text-lg text-center px-4 md:px-24 mb-8'>
           {t.about.description}
         </p>
-        <Image
-          src='/me.png'
-          alt='Me in AI generated art style'
-          width={200}
-          height={200}
-          className='w-48 md:w-72 h-auto'
-        />
       </div>
-      <div className='flex space-x-4 justify-center w-full mt-8 mb-20'>
-        <Link href='https://github.com/vermenea' passHref>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full px-4 mb-4'>
+        {t.about.specializations.map((spec: Spec, idx: number) => (
+          <div
+            key={idx}
+            className='glassy-hover-box bg-white/10 border border-pink-300/40 rounded-xl shadow-lg shadow-pink-200/30 p-6 flex flex-col items-center backdrop-blur-sm transition-all duration-300'
+          >
+            <h2 className='text-xl font-bold mb-2 text-white drop-shadow'>
+              {spec.title}
+            </h2>
+            <p className='text-center text-white/90'>{spec.description}</p>
+          </div>
+        ))}
+      </div>
+      <div className='flex space-x-4 justify-center w-full mt-8'>
+        <Link href='https://github.com/vermenea'>
           <Image
             src='/githubwhite.png'
             alt='github'
@@ -48,7 +47,7 @@ export default function About() {
             className='hover:opacity-80 transition-opacity'
           />
         </Link>
-        <Link href='https://www.linkedin.com/in/vermenea/' passHref>
+        <Link href='https://www.linkedin.com/in/vermenea/'>
           <Image
             src='/linkedinwhite.png'
             alt='linkedin'
@@ -57,7 +56,7 @@ export default function About() {
             className='hover:opacity-80 transition-opacity'
           />
         </Link>
-        <Link href='https://x.com/vermenea' passHref>
+        <Link href='https://x.com/vermenea'>
           <Image
             src='/twitter.png'
             alt='x'

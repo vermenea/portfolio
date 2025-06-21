@@ -1,5 +1,7 @@
 'use client';
+
 import { useLanguage } from '@/context/LanguageContext';
+
 import Image from 'next/image';
 
 export default function LanguageToggle() {

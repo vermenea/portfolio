@@ -3,7 +3,7 @@ import { LanguageProvider } from '@/context/LanguageContext';
 import '@/style/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Vermenea',
+  title: 'Natalia Zagórska - portfolio',
   description: 'Personal portfolio website',
 };
 

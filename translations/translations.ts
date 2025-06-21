@@ -6,15 +6,33 @@ export const translations = {
       projects: 'Projects'
     },
     home: {
-      typingText: 'Are you looking for a website?',
+      typingText: 'Hi, lets create something amazing',
       contactMe: 'Contact me'
     },
     about: {
-      title: 'About Vermenea',
-      description: "Oh hello there! My name is Natalia or Vermenea - I'm a caffeine-fueled frontend sorcerer who turns pixels into experiences and coffee into code. I specialize in crafting sleek, responsive user interfaces with Javascript, Next.js and React. My journey in coding has been a wild ride, full of triumphs, facepalm moments, and the occasional \"why is it happening?!\" debugging marathon. If you need a website or an employee, I'm your gal!"
+      title: 'About me',
+      description: "Oh hello there! My name is Natalia - I'm a caffeine-fueled frontend developer who specializes in responsive web design, SEO, graphic design, and building web pages with modern technologies. If you need a website or an employee, I'm your gal!",
+      specializations: [
+        {
+          title: 'Responsive Web Design',
+          description: 'I create websites that look and work great on any device, ensuring a seamless user experience everywhere.'
+        },
+        {
+          title: 'SEO',
+          description: 'I optimize web pages for search engines, helping your site rank higher and reach more people.'
+        },
+        {
+          title: 'Graphic Design',
+          description: 'I design visually appealing graphics and layouts that enhance your brand and engage your audience.'
+        },
+        {
+          title: 'Modern Web Technologies',
+          description: 'I build web pages using the latest technologies and best practices for performance, security, and maintainability.'
+        }
+      ]
     },
     projects: {
-      title: "Vermenea's Projects",
+      title: "Projects",
       goToProject: 'Go to project',
       checkOthers: 'Go check other projects (✿◡‿◡)',
       items: [
@@ -44,15 +62,33 @@ export const translations = {
       projects: 'Projekty'
     },
     home: {
-      typingText: 'Potrzebujesz strony internetowej?',
+      typingText: 'Cześć, stwórzmy coś niesamowitego',
       contactMe: 'Skontaktuj się ze mną'
     },
     about: {
-      title: 'O Vermenea',
-      description: "Cześć! Nazywam się Natalia, znana również jako Vermenea - jestem frontend developerką napędzaną kofeiną, która zamienia piksele w doświadczenia, a kawę w kod. Specjalizuję się w tworzeniu eleganckich, responsywnych interfejsów użytkownika przy użyciu Javascript, Next.js i React. Moja podróż z programowaniem była pełna triumfów, niezapomnianych momentów i okazjonalnych maratonów debugowania. Jeśli potrzebujesz strony internetowej lub pracownika, jestem do usług!"
+      title: 'O mnie',
+      description: "Cześć! Nazywam się Natalia – jestem frontend developerką napędzaną kofeiną, która specjalizuje się w responsywnym web designie, SEO, projektowaniu graficznym oraz tworzeniu stron w nowoczesnych technologiach. Jeśli potrzebujesz strony internetowej lub pracownika, jestem do usług!",
+      specializations: [
+        {
+          title: 'Responsywny Web Design',
+          description: 'Tworzę strony internetowe, które wyglądają i działają świetnie na każdym urządzeniu, zapewniając spójne doświadczenie użytkownika.'
+        },
+        {
+          title: 'SEO',
+          description: 'Optymalizuję strony pod kątem wyszukiwarek, pomagając Twojej witrynie osiągać wyższe pozycje i docierać do większej liczby osób.'
+        },
+        {
+          title: 'Projektowanie Graficzne',
+          description: 'Projektuję atrakcyjne grafiki i układy, które wzmacniają Twoją markę i angażują odbiorców.'
+        },
+        {
+          title: 'Nowoczesne Technologie Webowe',
+          description: 'Tworzę strony w oparciu o najnowsze technologie i najlepsze praktyki dotyczące wydajności, bezpieczeństwa i utrzymania.'
+        }
+      ]
     },
     projects: {
-      title: 'Projekty Vermenea',
+      title: 'Projekty',
       goToProject: 'Zobacz projekt',
       checkOthers: 'Zobacz inne projekty (✿◡‿◡)',
       items: [

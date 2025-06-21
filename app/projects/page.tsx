@@ -1,10 +1,12 @@
 'use client';
 import Link from 'next/link';
+
 import LanguageToggle from '@/components/LanguageToggle';
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/translations/translations';
+import Nav from '@/components/Nav';
 
-const projectLinks = [
+const projectLinks: string[] = [
   'https://your-pomo-buddy.vercel.app/',
   'https://vermenea.github.io/MemoMyChinchilla/',
   'https://frontend-staging.tuto.dev.pfaff.app/',
@@ -17,19 +19,9 @@ export default function Projects() {
 
   return (
     <div className='relative flex flex-col items-center justify-center min-h-screen p-4'>
-      <div className='absolute inset-0 bg-[url("/bcg.jpg")] bg-cover bg-center opacity-20 z-0'></div>
+      <div className='absolute inset-0 bg-[url("/pink-bcg.jpg")] bg-cover bg-center z-0'></div>
       <div className='relative z-10 w-full flex flex-col items-center'>
-        <nav className='fixed top-0 left-0 w-screen h-16 flex items-center justify-between px-4 bg-gray-900/30 backdrop-blur-sm z-50'>
-          <Link href='/' passHref>
-            <p className='text-lg font-semibold text-white'>{t.nav.home}</p>
-          </Link>
-          <Link href='/about' passHref>
-            <p className='text-lg font-semibold text-white'>{t.nav.about}</p>
-          </Link>
-          <Link href='/projects' passHref>
-            <p className='text-lg font-semibold text-white'>{t.nav.projects}</p>
-          </Link>
-        </nav>
+        <Nav />
         <h1 className='ml-4 text-4xl font-semibold mb-12 text-white mt-20 text-center'>
           {t.projects.title}
         </h1>
@@ -54,7 +46,7 @@ export default function Projects() {
           ))}
         </div>
 
-        <p className='text-lg text-center mt-4'>{t.projects.checkOthers}</p>
+        <p className='text-lg text-center my-10'>{t.projects.checkOthers}</p>
         <div className='fixed bottom-4 right-4 flex gap-2'>
           <LanguageToggle />
         </div>
