@@ -11,7 +11,7 @@ export default function Home() {
   const t = translations[language];
 
   return (
-    <div className='flex flex-col items-center justify-center w-screen h-screen overflow-hidden text-white p-4 bg-[url("/pink-bcg.webp")] bg-cover bg-center relative'>
+    <div className='flex flex-col items-center justify-center w-screen h-screen overflow-hidden text-white p-4 relative'>
       <nav className='fixed top-0 left-0 w-screen h-16 flex items-center justify-between px-4'>
         <Link href='/' >
           <p className='text-lg md:text-xl font-semibold cursor-pointer'>

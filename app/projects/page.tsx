@@ -19,7 +19,7 @@ export default function Projects() {
 
   return (
     <div className='relative flex flex-col items-center justify-center min-h-screen p-4'>
-      <div className='absolute inset-0 bg-[url("/pink-bcg.webp")] bg-cover bg-center z-0'></div>
+      <div className='absolute inset-0 z-0'></div>
       <div className='relative z-10 w-full flex flex-col items-center'>
         <Nav />
         <h1 className='ml-4 text-4xl font-semibold mb-12 text-white mt-20 text-center'>
