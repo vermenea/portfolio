@@ -14,7 +14,7 @@ export default function About() {
   const t = translations[language];
 
   return (
-    <div className='flex flex-col items-center justify-start fit-h-screen p-4 pb-20  bg-[url("/pink-bcg.jpg")] bg-cover bg-center relative'>
+    <div className='flex flex-col items-center justify-start fit-h-screen p-4 pb-20  bg-[url("/pink-bcg.webp")] bg-cover bg-center relative'>
       <Nav />
       <h1 className='text-3xl md:text-4xl font-semibold mt-20 md:mt-24'>
         {t.about.title}
