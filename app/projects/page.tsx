@@ -19,14 +19,14 @@ export default function Projects() {
 
   return (
     <div className='relative flex flex-col items-center justify-center min-h-screen p-6'>
-      <div className='absolute inset-0 z-0'></div>
-      <div className='relative z-10 w-full flex flex-col items-center'>
+      <header>
         <Nav />
+      </header>
+      <main className='relative z-10 w-full flex flex-col items-center'>
         <h1 className='ml-4 text-4xl font-semibold mb-12 text-white mt-20 text-center'>
           {t.projects.title}
         </h1>
-
-        <div className='space-y-8 max-w-2xl'>
+        <section className='space-y-8 max-w-2xl'>
           {t.projects.items.map((project, index) => (
             <div
               key={index}
@@ -35,7 +35,12 @@ export default function Projects() {
               <h2 className='text-2xl mb-4'>{project.title}</h2>
               <p className='mb-6'>{project.description}</p>
               <div className='flex gap-4'>
-                {!['Automatikserwis - car workshop website', 'KodON - science club website', 'KodON - strona internetowa koła naukowego', 'Automatikserwis - strona internetowa warsztatu samochodowego'].includes(project.title) && (
+                {![
+                  'Automatikserwis - car workshop website',
+                  'KodON - science club website',
+                  'KodON - strona internetowa koła naukowego',
+                  'Automatikserwis - strona internetowa warsztatu samochodowego',
+                ].includes(project.title) && (
                   <Link
                     href={projectLinks[index] || '#'}
                     className='px-6 py-2 rounded-lg bg-gradient-to-r from-red-500/70 to-pink-500/70 text-white hover:from-red-400 hover:to-pink-400 transition-all duration-300 transform hover:scale-105'
@@ -46,13 +51,12 @@ export default function Projects() {
               </div>
             </div>
           ))}
-        </div>
-
+        </section>
         <p className='text-lg text-center my-10'>{t.projects.checkOthers}</p>
-        <div className='fixed bottom-4 right-4 flex gap-2'>
-          <LanguageToggle />
-        </div>
-      </div>
+      </main>
+      <footer className='fixed bottom-4 right-4 flex gap-2'>
+        <LanguageToggle />
+      </footer>
     </div>
   );
 }
