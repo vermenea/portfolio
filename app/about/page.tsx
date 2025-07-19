@@ -30,7 +30,7 @@ export default function About() {
 
         <section className='max-w-4xl w-full px-4 mb-12'>
           <h2 className='text-2xl font-semibold text-center mb-6'>
-            Technologie
+            {t.about.technologies.title}
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8 items-start'>
             <div className='text-center'>
