@@ -1,7 +1,3 @@
-export interface Spec {
-  title: string;
-  description: string;
-}
 
 export type Language = 'en' | 'pl';
 

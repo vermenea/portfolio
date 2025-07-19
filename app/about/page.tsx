@@ -6,7 +6,7 @@ import LanguageToggle from '@/components/LanguageToggle';
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/translations/translations';
 import '@/style/glassy-hover.css';
-import { Spec } from '@/types/types';
+
 import Nav from '@/components/Nav';
 
 export default function About() {
@@ -27,19 +27,56 @@ export default function About() {
             {t.about.description}
           </p>
         </section>
-        <section className='grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full px-4 mb-4'>
-          {t.about.specializations.map((spec: Spec, idx: number) => (
-            <div
-              key={idx}
-              className='border bg-black/30 backdrop-blur-sm p-6 rounded-lg border-red-500/70 text-center'
-            >
-              <h2 className='text-xl font-bold mb-2 text-white drop-shadow'>
-                {spec.title}
-              </h2>
-              <p className='text-center text-white/90'>{spec.description}</p>
+
+        <section className='max-w-4xl w-full px-4 mb-12'>
+          <h2 className='text-2xl font-semibold text-center mb-6'>
+            {t.about.technologies.title}
+          </h2>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-8 items-start'>
+            <div className='text-center'>
+              <h3 className='text-xl font-bold mb-2'>{t.about.technologies.frontend.title}</h3>
+              <div className='flex justify-center mb-4'>
+                <img
+                  src='https://skillicons.dev/icons?i=ts,react,nextjs'
+                  alt='TypeScript, React, Next.js'
+                  className='h-12'
+                />
+              </div>
+              <p className='text-sm text-gray-300'>
+                {t.about.technologies.frontend.description}
+              </p>
             </div>
-          ))}
+
+            <div className='text-center'>
+              <h3 className='text-xl font-bold mb-2'>{t.about.technologies.styling.title}</h3>
+              <div className='flex justify-center mb-4'>
+                <img
+                  src='https://skillicons.dev/icons?i=css,sass,tailwind,materialui,figma,ps'
+                  alt='CSS, Sass, Tailwind, Material UI, Figma, Photoshop'
+                  className='h-12'
+                />
+              </div>
+              <p className='text-sm text-gray-300'>
+                {t.about.technologies.styling.description}
+              </p>
+            </div>
+
+            <div className='text-center'>
+              <h3 className='text-xl font-bold mb-2'>{t.about.technologies.tools.title}</h3>
+              <div className='flex justify-center mb-4'>
+                <img
+                  src='https://skillicons.dev/icons?i=git,nodejs,sentry,postman,vercel,firebase'
+                  alt='Git, Node.js, Sentry, Postman, Vercel, Firebase'
+                  className='h-12'
+                />
+              </div>
+              <p className='text-sm text-gray-300'>
+                {t.about.technologies.tools.description}
+              </p>
+            </div>
+          </div>
         </section>
+
       </main>
       <footer className='flex space-x-4 justify-center w-full mt-10'>
         <Link href='https://github.com/vermenea'>
