@@ -34,7 +34,9 @@ export default function About() {
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8 items-start'>
             <div className='text-center'>
-              <h3 className='text-xl font-bold mb-2'>Front-End</h3>
+              <h3 className='text-xl font-bold mb-2'>
+                {t.about.technologies.frontend.title}
+              </h3>
               <div className='flex justify-center mb-4'>
                 <img
                   src='https://skillicons.dev/icons?i=ts,react,nextjs'
@@ -43,13 +45,14 @@ export default function About() {
                 />
               </div>
               <p className='text-sm text-gray-300'>
-                TypeScript w połączeniu z React i Next.js umożliwia tworzenie
-                skalowalnych aplikacji webowych z nowoczesnymi funkcjami i
-                optymalizacją SEO.
+                {t.about.technologies.frontend.description}
               </p>
             </div>
+
             <div className='text-center'>
-              <h3 className='text-xl font-bold mb-2'>Stylowanie i UX</h3>
+              <h3 className='text-xl font-bold mb-2'>
+                {t.about.technologies.styling.title}
+              </h3>
               <div className='flex justify-center mb-4'>
                 <img
                   src='https://skillicons.dev/icons?i=css,sass,tailwind,materialui,figma,ps'
@@ -58,13 +61,14 @@ export default function About() {
                 />
               </div>
               <p className='text-sm text-gray-300'>
-                Dbam o responsywny i estetyczny design, wykorzystując nowoczesne
-                narzędzia stylizacyjne oraz prototypowanie w Figma i Photoshop.
+                {t.about.technologies.styling.description}
               </p>
             </div>
 
             <div className='text-center'>
-              <h3 className='text-xl font-bold mb-2'>Narzędzia i Backend</h3>
+              <h3 className='text-xl font-bold mb-2'>
+                {t.about.technologies.tools.title}
+              </h3>
               <div className='flex justify-center mb-4'>
                 <img
                   src='https://skillicons.dev/icons?i=git,nodejs,sentry,postman,vercel,firebase'
@@ -73,9 +77,7 @@ export default function About() {
                 />
               </div>
               <p className='text-sm text-gray-300'>
-                Git ułatwia kontrolę wersji, a Node.js pozwala na tworzenie
-                serwerów. Korzystam z narzędzi monitoringu i CI/CD, takich jak
-                Sentry, Postman i Vercel, oraz z usług Firebase.
+                {t.about.technologies.tools.description}
               </p>
             </div>
           </div>
