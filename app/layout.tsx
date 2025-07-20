@@ -25,7 +25,7 @@ export default function RootLayout({
           <div className='flex justify-center items-center'>
             <Footer />
           </div>
-          <aside className='fixed bottom-4 right-4'>
+          <aside className='fixed bottom-4 right-4 z-10'>
             <LanguageToggle />
           </aside>
         </LanguageProvider>

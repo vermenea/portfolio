@@ -11,7 +11,7 @@ export const translations = {
     },
     about: {
       title: 'About me',
-      description: "Hello! My name is Natalia—I hold a degree in Medical Biology and you’ll most often find me working in a laboratory, but my second passion is web development. I take great pleasure in building the front end of web applications and crafting their prototypes. I have three years of professional experience and am constantly sharpening my skills.",
+      description: "Hello! My name is Natalia — I hold a degree in Medical Biology and you’ll most often find me working in a laboratory, but my second passion is web development. I take great pleasure in building the front end of web applications and crafting their prototypes. I have three years of professional experience and am constantly sharpening my skills.",
       technologies: {
         title: 'Technologies',
         frontend: {

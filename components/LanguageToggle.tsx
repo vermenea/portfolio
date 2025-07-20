@@ -8,7 +8,7 @@ export default function LanguageToggle() {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <div className='fixed bottom-4 right-4 flex gap-2'>
+    <div className='fixed bottom-4 right-4 flex gap-2 z-10'>
       <button
         onClick={() => setLanguage('en')}
         className={`p-1 rounded ${

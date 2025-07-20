@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className='flex space-x-4 absolute bottom-4'>
+    <footer className='flex space-x-4 my-4'>
       <Link href='https://github.com/vermenea'>
         <Image
           src='/githubwhite.png'
