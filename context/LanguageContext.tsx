@@ -2,7 +2,7 @@
 
 import { Language, LanguageContextType } from '@/types/types';
 
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import { createContext, useState, useContext, useEffect } from 'react';
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
   undefined

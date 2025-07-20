@@ -1,10 +1,9 @@
 'use client';
+
 import Link from 'next/link';
 
-import LanguageToggle from '@/components/LanguageToggle';
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/translations/translations';
-import Nav from '@/components/Nav';
 
 const projectLinks: string[] = [
   'https://your-pomo-buddy.vercel.app/',
@@ -17,9 +16,6 @@ export default function Projects() {
 
   return (
     <div className='relative flex flex-col items-center justify-center min-h-screen p-6'>
-      <header>
-        <Nav />
-      </header>
       <main className='relative z-10 w-full flex flex-col items-center'>
         <h1 className='ml-4 text-4xl font-semibold mb-12 text-white mt-20 text-center'>
           {t.projects.title}
@@ -51,9 +47,6 @@ export default function Projects() {
           {t.projects.checkOthers}
         </Link>
       </main>
-      <footer className='fixed bottom-4 right-4 flex gap-2'>
-        <LanguageToggle />
-      </footer>
     </div>
   );
 }
