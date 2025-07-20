@@ -18,6 +18,7 @@
 - `TypeScript`
 - `Tailwind CSS`
 - `Vercel`
+- `Framer motion`
 
 # Clone the repo
 ```
