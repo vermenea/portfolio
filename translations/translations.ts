@@ -51,6 +51,11 @@ export const translations = {
           description:
             'Dank Diary is a note-publishing application where users can post notes and thoughts on a post board. Users can create, edit, and delete their notes, as well as view notes from other users. The app is user-friendly and allows easy sharing of thoughts with others anonymously.',
         },
+        {
+          title: 'Automatik Serwis',
+          description:
+            'Freelance project - under development. A service website for a car repair shop.',
+        },
       ],
     },
   },
@@ -105,6 +110,11 @@ export const translations = {
           title: 'Dank Diary - Projekt',
           description:
             'Dank Diary to aplikacja do publikowania notatek, przemyśleń na tablicy postów. Użytkownicy mogą tworzyć, edytować i usuwać swoje notatki, a także przeglądać notatki innych użytkowników. Aplikacja jest prosta w obsłudze i pozwala na łatwe dzielenie się myślami z innymi anonimowo.',
+        },
+        {
+          title: 'Automatik Serwis',
+          description:
+            'Projekt freelancerski - w trakcie tworzenia. Strona serwisowa dla warsztatu samochodowego.',
         },
       ],
     },

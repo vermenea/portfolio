@@ -11,6 +11,7 @@ const projectLinks: string[] = [
   'https://your-pomo-buddy.vercel.app/',
   'https://anitamaruszewska.pl/',
   'https://dank-diary.vercel.app/',
+  'https://automatik-serwis.vercel.app/',
 ] as const;
 
 export default function Projects() {
