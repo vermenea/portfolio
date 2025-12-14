@@ -47,6 +47,11 @@ export const translations = {
           description: 'Freelance project.',
         },
         {
+          title: 'KodON - Bioinformatics SKN Website',
+          description:
+            'Kodon is a website for the Bioinformatics Student Scientific Club, providing information about the club\'s activities, projects, and events. The site is designed to be user-friendly and informative, showcasing the club\'s dedication to bioinformatics and its community engagement.',
+        },
+        {
           title: 'Dank Diary - Project',
           description:
             'Dank Diary is a note-publishing application where users can post notes and thoughts on a post board. Users can create, edit, and delete their notes, as well as view notes from other users. The app is user-friendly and allows easy sharing of thoughts with others anonymously.',
@@ -105,6 +110,11 @@ export const translations = {
         {
           title: 'Anita Maruszewska - Twoja uroda z Ajurwedą',
           description: 'Projekt freelancerski.',
+        },
+        {
+          title: 'KodON - Strona SKN Bioinformatyków',
+          description:
+            'Kodon to strona internetowa Studenckiego Koła Naukowego Bioinformatyków, która dostarcza informacji o działalności, projektach i wydarzeniach koła. Strona została zaprojektowana tak, aby była przyjazna dla użytkownika i informacyjna, prezentując zaangażowanie koła w bioinformatykę i społeczność.',
         },
         {
           title: 'Dank Diary - Projekt',
