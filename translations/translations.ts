@@ -43,21 +43,17 @@ export const translations = {
             'PomoBuddy is a Pomodoro Timer App designed to help individuals manage their work time effectively using the Pomodoro Technique. The Pomodoro Technique is a time management method that breaks work into intervals, traditionally 25 minutes in length, separated by short breaks. This technique aims to improve focus and productivity.',
         },
         {
-          title: 'Anita Maruszewska - Twoja uroda z Ajurwedą',
-          description: 'Freelance project.',
-        },
-        {
           title: 'KodON - Bioinformatics SKN Website',
           description:
             'Kodon is a website for the Bioinformatics Student Scientific Club, providing information about the club\'s activities, projects, and events. The site is designed to be user-friendly and informative, showcasing the club\'s dedication to bioinformatics and its community engagement.',
         },
         {
-          title: 'Dank Diary - Project',
+          title: 'Dank Diary - Project (demo)',
           description:
             'Dank Diary is a note-publishing application where users can post notes and thoughts on a post board. Users can create, edit, and delete their notes, as well as view notes from other users. The app is user-friendly and allows easy sharing of thoughts with others anonymously.',
         },
         {
-          title: 'Automatik Serwis',
+          title: 'Automatik Serwis (demo)',
           description:
             'Freelance project - under development. A service website for a car repair shop.',
         },
@@ -108,21 +104,17 @@ export const translations = {
             'PomoBuddy to aplikacja Pomodoro Timer zaprojektowana, aby pomóc użytkownikom efektywnie zarządzać czasem pracy przy użyciu Techniki Pomodoro. Technika Pomodoro to metoda zarządzania czasem, która dzieli pracę na interwały, tradycyjnie 25-minutowe, przedzielone krótkimi przerwami. Ta technika ma na celu poprawę koncentracji i produktywności.',
         },
         {
-          title: 'Anita Maruszewska - Twoja uroda z Ajurwedą',
-          description: 'Projekt freelancerski.',
-        },
-        {
           title: 'KodON - Strona SKN Bioinformatyków',
           description:
             'Kodon to strona internetowa Studenckiego Koła Naukowego Bioinformatyków, która dostarcza informacji o działalności, projektach i wydarzeniach koła. Strona została zaprojektowana tak, aby była przyjazna dla użytkownika i informacyjna, prezentując zaangażowanie koła w bioinformatykę i społeczność.',
         },
         {
-          title: 'Dank Diary - Projekt',
+          title: 'Dank Diary - Projekt (demo)',
           description:
             'Dank Diary to aplikacja do publikowania notatek, przemyśleń na tablicy postów. Użytkownicy mogą tworzyć, edytować i usuwać swoje notatki, a także przeglądać notatki innych użytkowników. Aplikacja jest prosta w obsłudze i pozwala na łatwe dzielenie się myślami z innymi anonimowo.',
         },
         {
-          title: 'Automatik Serwis',
+          title: 'Automatik Serwis (demo)',
           description:
             'Projekt freelancerski - w trakcie tworzenia. Strona serwisowa dla warsztatu samochodowego.',
         },
