@@ -43,6 +43,11 @@ export const translations = {
             'PomoBuddy is a Pomodoro Timer App designed to help individuals manage their work time effectively using the Pomodoro Technique. The Pomodoro Technique is a time management method that breaks work into intervals, traditionally 25 minutes in length, separated by short breaks. This technique aims to improve focus and productivity.',
         },
         {
+          title: 'KodBiologii - my own tutor website',
+          description:
+            'KodBiologii is my own website where I offer tutoring in biology. The site is designed to be user-friendly and informative, showcasing my experience and approach to teaching biology.',
+        },
+        {
           title: 'KodON - Bioinformatics SKN Website',
           description:
             'Kodon is a website for the Bioinformatics Student Scientific Club, providing information about the club\'s activities, projects, and events. The site is designed to be user-friendly and informative, showcasing the club\'s dedication to bioinformatics and its community engagement.',
@@ -102,6 +107,11 @@ export const translations = {
           title: 'PomoBuddy - Projekt',
           description:
             'PomoBuddy to aplikacja Pomodoro Timer zaprojektowana, aby pomóc użytkownikom efektywnie zarządzać czasem pracy przy użyciu Techniki Pomodoro. Technika Pomodoro to metoda zarządzania czasem, która dzieli pracę na interwały, tradycyjnie 25-minutowe, przedzielone krótkimi przerwami. Ta technika ma na celu poprawę koncentracji i produktywności.',
+        },
+          {
+          title: 'KodBiologii - moja własna strona korepetytora',
+          description:
+            'KodBiologii to moja własna strona internetowa, na której oferuję korepetycje z biologii. Strona została zaprojektowana tak, aby była przyjazna dla użytkownika i informacyjna, prezentując moje doświadczenie i podejście do nauczania biologii.',
         },
         {
           title: 'KodON - Strona SKN Bioinformatyków',
