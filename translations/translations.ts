@@ -12,7 +12,7 @@ export const translations = {
     about: {
       title: 'About me',
       description:
-        'Hello! My name is Natalia — I hold a degree in Medical Biology and you’ll most often find me working in a laboratory, but my second passion is web development. I take great pleasure in building the front end of web applications and crafting their prototypes. I have three years of professional experience and am constantly sharpening my skills.',
+        'Hello! My name is Natalia — I hold a degree in Medical Biology and you’ll most often find me working in a laboratory, but my second passion is web development. I take great pleasure in building the front end of web applications and crafting their prototypes. I have 4 years of professional experience and am constantly sharpening my skills.',
       technologies: {
         title: 'Technologies',
         frontend: {
@@ -78,7 +78,7 @@ export const translations = {
     about: {
       title: 'O mnie',
       description:
-        'Cześć! Nazywam się Natalia – z wykształcenia jestem biologiem medycznym i na codzień można mnie spotkać w laboratorium ale moim drugim hobby jest tworzenie stron internetowych. Największą przyjemnność sprawia mi pisanie frontendu aplikacji webowych i tworzenie ich prototypów. Posiadam 3 letnie doświadczenie i nieustannie rozwijam swoje umiejętności.',
+        'Cześć! Nazywam się Natalia – z wykształcenia jestem biologiem medycznym i na codzień można mnie spotkać w laboratorium ale moim drugim hobby jest tworzenie stron internetowych. Największą przyjemnność sprawia mi pisanie frontendu aplikacji webowych i tworzenie ich prototypów. Posiadam 4 letnie doświadczenie i nieustannie rozwijam swoje umiejętności.',
       technologies: {
         title: 'Technologie',
         frontend: {
