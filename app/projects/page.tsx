@@ -11,7 +11,6 @@ const projectLinks: string[] = [
   'https://your-pomo-buddy.vercel.app/',
   'https://kodbiologii.pl/',
   'https://kodon.pl/',
-  'https://dank-diary.vercel.app/',
   'https://automatik-serwis.vercel.app/',
 ] as const;
 

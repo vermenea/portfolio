@@ -53,11 +53,6 @@ export const translations = {
             'Kodon is a website for the Bioinformatics Student Scientific Club, providing information about the club\'s activities, projects, and events. The site is designed to be user-friendly and informative, showcasing the club\'s dedication to bioinformatics and its community engagement.',
         },
         {
-          title: 'Dank Diary - Project (demo)',
-          description:
-            'Dank Diary is a note-publishing application where users can post notes and thoughts on a post board. Users can create, edit, and delete their notes, as well as view notes from other users. The app is user-friendly and allows easy sharing of thoughts with others anonymously.',
-        },
-        {
           title: 'Automatik Serwis (demo)',
           description:
             'Freelance project - under development. A service website for a car repair shop.',
@@ -109,7 +104,7 @@ export const translations = {
             'PomoBuddy to aplikacja Pomodoro Timer zaprojektowana, aby pomóc użytkownikom efektywnie zarządzać czasem pracy przy użyciu Techniki Pomodoro. Technika Pomodoro to metoda zarządzania czasem, która dzieli pracę na interwały, tradycyjnie 25-minutowe, przedzielone krótkimi przerwami. Ta technika ma na celu poprawę koncentracji i produktywności.',
         },
           {
-          title: 'KodBiologii - moja własna strona korepetytora',
+          title: 'KodBiologii',
           description:
             'KodBiologii to moja własna strona internetowa, na której oferuję korepetycje z biologii. Strona została zaprojektowana tak, aby była przyjazna dla użytkownika i informacyjna, prezentując moje doświadczenie i podejście do nauczania biologii.',
         },
@@ -117,11 +112,6 @@ export const translations = {
           title: 'KodON - Strona SKN Bioinformatyków',
           description:
             'Kodon to strona internetowa Studenckiego Koła Naukowego Bioinformatyków, która dostarcza informacji o działalności, projektach i wydarzeniach koła. Strona została zaprojektowana tak, aby była przyjazna dla użytkownika i informacyjna, prezentując zaangażowanie koła w bioinformatykę i społeczność.',
-        },
-        {
-          title: 'Dank Diary - Projekt (demo)',
-          description:
-            'Dank Diary to aplikacja do publikowania notatek, przemyśleń na tablicy postów. Użytkownicy mogą tworzyć, edytować i usuwać swoje notatki, a także przeglądać notatki innych użytkowników. Aplikacja jest prosta w obsłudze i pozwala na łatwe dzielenie się myślami z innymi anonimowo.',
         },
         {
           title: 'Automatik Serwis (demo)',
